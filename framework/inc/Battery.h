@@ -68,70 +68,112 @@ public:
     // Parameters
     struct Parameters {
         double An2;
+        //Empirical parameter for negative electrode in Redlich-Kister expansion.
         double qnBMax;
         double U0p;
         double An7;
+        //Empirical parameter for negative electrode in Redlich-Kister expansion.
         double Ro;
+        //Internal Ohmic resistance of the battery.
         double Vol;
         double qnSMax;
         double F;
         double to;
+        //Time constant for Ohmic potential.
         double Ap0;
+        //Empirical parameter for positive electrode in Redlich-Kister expansion.
         double Ap9;
+        //Empirical parameter for positive electrode in Redlich-Kister expansion.
         double An5;
+        //Empirical parameter for negative electrode in Redlich-Kister expansion.
         double An9;
+        //Empirical parameter for negative electrode in Redlich-Kister expansion.
         double qpBMax;
         double alpha;
         double VolSFraction;
+        //Fraction of total electrode volume occupied by the surface control volume.
         double VEOD;
+        //The voltage level that defines end-of-discharge (EOD).
         double qMax;
         double xpMin;
+        //Minimum mole fraction for positive electrode.
         double Ap1;
+        //Empirical parameter for positive electrode in Redlich-Kister expansion.
         double qpSMin;
         double An4;
+        //Empirical parameter for negative electrode in Redlich-Kister expansion.
         double Ap3;
+        //Empirical parameter for positive electrode in Redlich-Kister expansion.
         double qpSMax;
         double Ap4;
+        //Empirical parameter for positive electrode in Redlich-Kister expansion.
         double An11;
+        //Empirical parameter for negative electrode in Redlich-Kister expansion.
         double tsp;
+        //Time constant for surface overpotential for positive electrode.
         double kn;
+        //Lumped constant for Butler-Volmer equation for negative electrode.
         double Ap11;
+        //Empirical parameter for positive electrode in Redlich-Kister expansion.
         double Ap5;
+        //Empirical parameter for positive electrode in Redlich-Kister expansion.
         double kp;
+        //Lumped constant for Butler-Volmer equation for positive electrode.
         double R;
         double qnBMin;
         double An12;
+        //Empirical parameter for negative electrode in Redlich-Kister expansion.
         double An10;
+        //Empirical parameter for negative electrode in Redlich-Kister expansion.
         double VolS;
         double xpMax;
+        //Maximum mole fraction for positive electrode.
         double qBMax;
         double qSMax;
         double Ap8;
+        //Empirical parameter for positive electrode in Redlich-Kister expansion.
         double An6;
+        //Empirical parameter for negative electrode in Redlich-Kister expansion.
         double Sn;
+        //Surface area for negative electrode.
         double qpMin;
         double Ap2;
+        //Empirical parameter for positive electrode in Redlich-Kister expansion.
         double tsn;
+        //Time constant for surface overpotential for negative electrode.
         double qnMin;
         double qpMax;
         double qnMax;
         double qnSMin;
         double U0n;
+        //Empirical parameter for negative electrode in equilibrium potential.
         double qpBMin;
         double VolB;
         double Ap6;
+        //Empirical parameter for positive electrode in Redlich-Kister expansion.
         double Sp;
+        //Surface area for positive electrode.
         double Ap10;
+        //Empirical parameter for positive electrode in Redlich-Kister expansion.
         double An0;
+        //Empirical parameter for negative electrode in Redlich-Kister expansion.
         double xnMax;
+        //Maximum mole fraction for negative electrode.
         double Ap12;
+        //Empirical parameter for positive electrode in Redlich-Kister expansion.
         double An1;
+        //Empirical parameter for negative electrode in Redlich-Kister expansion.
         double Ap7;
+        //Empirical parameter for positive electrode in Redlich-Kister expansion.
         double An8;
+        //Empirical parameter for negative electrode in Redlich-Kister expansion.
         double xnMin;
+        //Minimum mole fraction for negative electrode.
         double tDiffusion;
+        //Diffusion time constant (increasing this causes a decrease in diffusion rate).
         double qMobile;
         double An3;
+        //Empirical parameter for negative electrode in Redlich-Kister expansion.
     } parameters;
 
     /** @brief      Execute state equation. This version of the function uses a given sampling time.
